@@ -38,7 +38,7 @@ public class pro1 extends HttpServlet {
             out.println("<title>Servlet pro1</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("Welcome"+request.getParameter("t1"));
+            out.println("Welcome :"+request.getParameter("t1")+"<br>");
             out.println("Last Name :"+request.getParameter("t2"));
             out.println("</body>");
             out.println("</html>");
