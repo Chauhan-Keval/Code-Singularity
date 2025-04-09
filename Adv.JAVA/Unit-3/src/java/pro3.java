@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Keval
  */
-@WebServlet(urlPatterns = {"/pro2"})
-public class pro2 extends HttpServlet {
+@WebServlet(urlPatterns = {"/pro3"})
+public class pro3 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,17 +35,10 @@ public class pro2 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet pro2</title>");
+            out.println("<title>Servlet pro3</title>");
             out.println("</head>");
             out.println("<body>");
-            String um = request.getParameter("t1");
-            String pwd = request.getParameter("t2");
-            if(um.equals("keval") && pwd.equals("123")){
-                out.println("Welcome "+um);
-            }
-            else{
-                out.println("Incorrect Username or Password");
-            }
+            out.println("<h1>Servlet pro3 at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
